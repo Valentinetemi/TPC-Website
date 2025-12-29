@@ -12,7 +12,6 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif"
 export const metadata: Metadata = {
   title: "Treasured People Church Worldwide Inc.",
   description: "Raising Chosen Treasures - A spirit-filled Nigerian Pentecostal church.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
