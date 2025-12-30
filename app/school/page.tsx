@@ -58,7 +58,7 @@ export default function SchoolPage() {
               },
               {
                 icon: Users,
-                title: "Small Classes",
+                title: "Small Class",
                 desc: "Personalized attention ensuring every child thrives academically.",
               },
               {
