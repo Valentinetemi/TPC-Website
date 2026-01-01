@@ -117,7 +117,7 @@ export default function Home() {
           <div className="relative animate-slide-in-right">
             <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl ring-1 ring-border/20">
               <Image
-                src="/nigerian-church-headquarters-modern.jpg"
+                src="/Image1.jpeg"
                 alt="Church Building"
                 fill
                 className="object-cover"
@@ -152,14 +152,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
             {[
               {
-                name: "Pastor Joseph Praise Olumodeji",
-                role: "General Overseer",
-                image: "/distinguished-nigerian-pastor-man.jpg",
+                name: "Apostle Joseph Praise Olumodeji",
+                role: "General Overseer/ President ",
+                image: "/Image2.jpeg",
               },
               {
-                name: "Pastor (Mrs) Olumodeji",
-                role: "Co-Pastor",
-                image: "/nigerian-pastor-woman-professional.jpg",
+                name: "Prophetess Love Ibukun Olumodeji",
+                role: "Assistant President/Mother in Isreal",
+                image: "/"
               },
             ].map((leader, i) => (
               <Link key={i} href="/leadership" className="group block space-y-8">
@@ -212,7 +212,7 @@ export default function Home() {
           <div className="space-y-12 order-1 lg:order-2">
             <div className="space-y-6">
               <div className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-[10px] font-bold uppercase tracking-[0.2em]">
-                KT People School
+              KINGDOM TREASURES CITADEL OF LEARNING SCHOOL
               </div>
               <h2 className="text-5xl sm:text-7xl font-serif font-bold leading-[1.1]">
                 Raising <br />
@@ -322,7 +322,8 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col">
                     <span className="text-xs uppercase tracking-widest font-bold text-white/40">Call Us</span>
-                    <span className="text-xl font-bold">+234 800 000 0000</span>
+                    <span className="text-xl font-bold">+234 8060749165</span>
+                    <span className="text-xl font-bold">+2348038454195</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
