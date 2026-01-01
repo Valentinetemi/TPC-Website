@@ -135,6 +135,47 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-32 sm:py-48 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+            <div className="bg-muted/50 p-12 rounded-[3rem] space-y-8 border border-border/40 hover:bg-card transition-colors group">
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                <Clock size={28} />
+              </div>
+              <h3 className="text-3xl font-serif font-bold">Sundays</h3>
+              <div className="space-y-2">
+                <p className="text-primary font-bold uppercase tracking-widest text-xs">Divine Encounter</p>
+                <p className="text-xl font-medium">7:30 AM — 11:00 AM</p>
+              </div>
+            </div>
+
+            <div className="bg-church p-12 rounded-[3rem] space-y-8 text-white shadow-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
+              <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                <Calendar size={28} />
+              </div>
+              <h3 className="text-3xl font-serif font-bold">Wednesdays</h3>
+              <div className="space-y-2">
+                <p className="text-white/60 font-bold uppercase tracking-widest text-xs">Mid-Week Service</p>
+                <p className="text-xl font-medium">5:00 PM</p>
+              </div>
+            </div>
+
+            <div className="bg-muted/50 p-12 rounded-[3rem] space-y-8 border border-border/40 hover:bg-card transition-colors group">
+              <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                <Phone size={28} />
+              </div>
+              <h3 className="text-3xl font-serif font-bold">Daily Prayer</h3>
+              <div className="space-y-2">
+                <p className="text-secondary font-bold uppercase tracking-widest text-xs">Intercession</p>
+                <p className="text-xl font-medium">3:00 PM — 5:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="py-32 sm:py-48 px-4 sm:px-6 lg:px-8 bg-card relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-[120px] -z-10" />
 
@@ -359,46 +400,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
 
-      <section className="py-32 sm:py-48 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
-            <div className="bg-muted/50 p-12 rounded-[3rem] space-y-8 border border-border/40 hover:bg-card transition-colors group">
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                <Clock size={28} />
-              </div>
-              <h3 className="text-3xl font-serif font-bold">Sundays</h3>
-              <div className="space-y-2">
-                <p className="text-primary font-bold uppercase tracking-widest text-xs">Divine Encounter</p>
-                <p className="text-xl font-medium">7:30 AM — 11:00 AM</p>
-              </div>
-            </div>
-
-            <div className="bg-church p-12 rounded-[3rem] space-y-8 text-white shadow-2xl relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
-              <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Calendar size={28} />
-              </div>
-              <h3 className="text-3xl font-serif font-bold">Wednesdays</h3>
-              <div className="space-y-2">
-                <p className="text-white/60 font-bold uppercase tracking-widest text-xs">Mid-Week Service</p>
-                <p className="text-xl font-medium">5:00 PM</p>
-              </div>
-            </div>
-
-            <div className="bg-muted/50 p-12 rounded-[3rem] space-y-8 border border-border/40 hover:bg-card transition-colors group">
-              <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                <Phone size={28} />
-              </div>
-              <h3 className="text-3xl font-serif font-bold">Daily Prayer</h3>
-              <div className="space-y-2">
-                <p className="text-secondary font-bold uppercase tracking-widest text-xs">Intercession</p>
-                <p className="text-xl font-medium">3:00 PM — 5:00 PM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
+        )
 }
