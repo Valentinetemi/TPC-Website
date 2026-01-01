@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
             <Button
-              size="lg"
+              size="lg"   
               className="w-full sm:w-auto bg-church hover:opacity-90 text-white rounded-full px-12 h-20 text-xl shadow-2xl transition-all hover:scale-105 font-serif font-bold"
             >
               <Play className="mr-3 h-6 w-6 fill-current" />
@@ -85,21 +85,20 @@ export default function Home() {
             </div>
 
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed font-medium">
-              Treasured People Church Worldwide Inc. has been a beacon of spiritual transformation for over 15 years,
-              committed to raising treasures that walk in their divine inheritance.
+            Treasured People Church Worldwide Inc. has been a beacon of spiritual transformation for over 17 years, committed to raising treasures and rescuing lives and families that walk in their divine inheritance.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-border/40 pt-12">
               <div className="space-y-4">
                 <h4 className="font-serif font-bold text-2xl">The Vision</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  To raise a generation of chosen treasures through the Word, Worship, and Warfare.
+                To raise a generation of chosen treasures and to rescue families through the Word, Worship, and Warfare.
                 </p>
               </div>
               <div className="space-y-4">
                 <h4 className="font-serif font-bold text-2xl text-secondary">The Mission</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  To impact nations with the tangible power of God through holiness and excellence.
+                To impact nations with the tangible power of God through righteousness and prayer and to rescue the families of the earth
                 </p>
               </div>
             </div>
@@ -126,7 +125,7 @@ export default function Home() {
             </div>
             <div className="absolute -bottom-16 -left-16 hidden xl:block w-64 aspect-square bg-card p-10 rounded-[2.5rem] shadow-2xl border border-border/40">
               <div className="flex flex-col items-center justify-center h-full text-center">
-                <span className="text-6xl font-serif font-bold text-primary">15</span>
+                <span className="text-6xl font-serif font-bold text-primary">17</span>
                 <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-2">
                   Years of Divine Grace
                 </span>

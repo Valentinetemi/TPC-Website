@@ -1,138 +1,99 @@
-import { Play, MessageCircle, Users, Share2, Calendar, Heart } from "lucide-react"
+"use client"
+
+import { Play, Bell, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 import Image from "next/image"
+import { useState } from "react"
 
 export default function LivePage() {
+  const [email, setEmail] = useState("")
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    // In a real implementation, this would send the email to a backend
+    console.log("Email submitted:", email)
+    setSubmitted(true)
+    setEmail("")
+    // Reset after 3 seconds
+    setTimeout(() => setSubmitted(false), 3000)
+  }
+
   return (
     <div className="pt-32 pb-32 bg-background min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Main Player Area */}
-          <div className="flex-1 space-y-8">
-            <div className="relative aspect-video bg-black rounded-[3rem] overflow-hidden shadow-2xl ring-1 ring-border/20 group">
-              <Image
-                src="/nigerian-church-worship-hands-raised.jpg"
-                alt="Live Stream"
-                fill
-                className="object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Button
-                  size="icon"
-                  className="w-24 h-24 rounded-full bg-church hover:opacity-90 shadow-2xl transition-all hover:scale-110"
-                >
-                  <Play fill="white" size={40} className="ml-1" />
-                </Button>
-              </div>
-              <div className="absolute top-8 left-8 flex gap-4">
-                <div className="bg-red-600 text-white text-[10px] font-bold px-4 py-2 rounded-full flex items-center gap-2 animate-pulse shadow-lg">
-                  <span className="w-2 h-2 bg-white rounded-full" />
-                  LIVE NOW
-                </div>
-                <div className="bg-black/70 backdrop-blur-md text-white text-[10px] font-bold px-4 py-2 rounded-full flex items-center gap-2 border border-white/10">
-                  <Users size={14} /> 1,240 Watching
-                </div>
-              </div>
-            </div>
+      <div className="max-w-5xl mx-auto px-4 md:px-8">
+        <div className="flex flex-col items-center justify-center text-center space-y-12">
+          {/* Decorative badge */}
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold uppercase tracking-wider backdrop-blur-sm">
+            <Sparkles size={16} className="animate-pulse" />
+            Coming Soon
+          </div>
 
-            <div className="flex flex-col md:flex-row justify-between items-start gap-8">
-              <div className="space-y-3">
-                <h1 className="text-3xl md:text-4xl font-serif font-bold">Sunday Service: Walking in Divine Purpose</h1>
-                <p className="text-muted-foreground flex items-center gap-3 text-lg font-medium">
-                  <span className="font-bold text-primary">Pastor Joseph Praise Olumodeji</span>
-                  <span>•</span>
-                  <span>Treasured People Church HQ</span>
-                </p>
-              </div>
-              <div className="flex gap-3">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="rounded-full gap-2 h-14 px-8 bg-transparent border-border font-semibold"
-                >
-                  <Share2 size={18} /> Share
-                </Button>
-                <Button size="lg" className="rounded-full gap-2 h-14 px-8 bg-church font-semibold">
-                  <Calendar size={18} /> Remind Me
-                </Button>
-              </div>
-            </div>
+          {/* Main Title */}
+          <h1 className="text-5xl sm:text-7xl lg:text-8xl font-serif font-bold leading-tight">
+            Watch Live <br />
+            <span className="text-primary italic">Coming Soon!</span>
+            <span className="inline-block ml-4">🎥✨</span>
+          </h1>
 
-            <div className="p-10 bg-card rounded-[2.5rem] border border-border/40 space-y-6 shadow-sm">
-              <h3 className="font-serif font-bold text-2xl">About this Session</h3>
-              <p className="text-base text-muted-foreground leading-relaxed font-medium">
-                Join us for a life-transforming session as we dive deep into the Word of God. Today's message focuses on
-                discovering the treasures within you and how to navigate life's challenges through spiritual warfare and
-                unwavering faith.
-              </p>
+          {/* Description */}
+          <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed max-w-3xl font-medium">
+            We're excited to bring you live streaming of our services very soon! Stay connected and join us from
+            anywhere for worship, teaching, and fellowship.
+          </p>
+
+          {/* Image placeholder */}
+          <div className="relative w-full max-w-4xl aspect-video rounded-[3rem] overflow-hidden shadow-2xl ring-1 ring-border/20 group mt-8">
+            <Image
+              src="/nigerian-church-worship-hands-raised.jpg"
+              alt="Worship Service"
+              fill
+              className="object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-500"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-background/20 backdrop-blur-sm">
+              <div className="w-32 h-32 rounded-full bg-church/90 flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                <Play fill="white" size={48} className="ml-2" />
+              </div>
             </div>
           </div>
 
-          {/* Chat / Sidebar area */}
-          <aside className="w-full lg:w-96 flex flex-col gap-8">
-            <div className="flex-1 bg-card rounded-[3rem] border border-border/40 flex flex-col overflow-hidden shadow-sm h-[600px] lg:h-auto">
-              <div className="p-6 border-b bg-muted/30 flex items-center justify-between">
-                <h3 className="font-serif font-bold text-xl flex items-center gap-3">
-                  <MessageCircle size={20} className="text-primary" /> Live Chat
-                </h3>
-                <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">
-                  248 Messages
-                </span>
+          {/* Subscribe Form */}
+          <div className="w-full max-w-md mt-8">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="relative">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email address"
+                  required
+                  className="w-full bg-card border-2 border-border rounded-full px-8 py-6 text-base focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-muted-foreground"
+                />
               </div>
-              <div className="flex-1 p-6 space-y-6 overflow-y-auto font-sans">
-                {[
-                  { user: "Emmanuel K.", msg: "Amen! Power of God is here.", color: "text-blue-500" },
-                  { user: "Blessing O.", msg: "Greetings from Lagos! 🙌", color: "text-purple-500" },
-                  {
-                    user: "Church Admin",
-                    msg: "Welcome everyone! Feel free to share your prayer requests.",
-                    color: "text-primary",
-                    isAdmin: true,
-                  },
-                  { user: "Sister Ruth", msg: "This message is for me. Thank you Pastor!", color: "text-green-500" },
-                ].map((chat, i) => (
-                  <div key={i} className="flex gap-4 text-sm">
-                    <div className="shrink-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center font-bold">
-                      {chat.user[0]}
-                    </div>
-                    <div>
-                      <span className={cn("font-bold mr-2", chat.color)}>{chat.user}</span>
-                      <span className="text-muted-foreground">{chat.msg}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="p-6 border-t bg-muted/10">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Say something..."
-                    className="w-full bg-background border border-border rounded-full px-6 py-4 pr-14 text-base focus:outline-none focus:ring-2 focus:ring-primary/20"
-                  />
-                  <Button
-                    size="icon"
-                    variant="ghost"
-                    className="absolute right-2 top-2 h-10 w-10 rounded-full text-primary"
-                  >
-                    <Share2 size={18} className="rotate-45" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-10 bg-church rounded-[3rem] text-white space-y-6 shadow-2xl">
-              <h4 className="font-serif font-bold text-2xl flex items-center gap-3">
-                <Heart size={22} /> Support Ministry
-              </h4>
-              <p className="text-sm text-white/70 leading-relaxed font-medium">
-                Your seeds and offerings help us reach more souls globally. Give securely online today.
-              </p>
-              <Button variant="secondary" className="w-full h-14 rounded-full font-bold text-base">
-                Give Online Now
+              <Button
+                type="submit"
+                size="lg"
+                className="w-full bg-church hover:opacity-90 text-white rounded-full h-16 text-lg shadow-xl transition-all hover:scale-105 font-serif font-bold gap-3"
+              >
+                <Bell size={22} />
+                {submitted ? "Thank You! 🎉" : "Notify Me When Live"}
               </Button>
-            </div>
-          </aside>
+            </form>
+            {submitted && (
+              <p className="mt-4 text-sm text-primary font-medium animate-fade-in">
+                We'll notify you as soon as live streaming is available!
+              </p>
+            )}
+          </div>
+
+          {/* Additional info */}
+          <div className="pt-12 border-t border-border/40 w-full max-w-2xl">
+            <p className="text-muted-foreground leading-relaxed">
+              Follow us on social media or visit us in person at{" "}
+              <span className="font-semibold text-foreground">Treasured People Church HQ</span> in Kabba, Kogi State,
+              Nigeria for our weekly services.
+            </p>
+          </div>
         </div>
       </div>
     </div>
