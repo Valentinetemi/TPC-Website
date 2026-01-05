@@ -200,7 +200,7 @@ export default function Home() {
               {
                 name: "Prophetess Love Ibukun Olumodeji",
                 role: "Assistant President/Mother in Isreal",
-                image: "/"
+                image: "/Image3.jpeg"
               },
             ].map((leader, i) => (
               <Link key={i} href="/leadership" className="group block space-y-8">
