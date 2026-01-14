@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Play,
   Calendar,
@@ -13,9 +13,9 @@ import {
   Mail,
   MapPin,
   ChevronRight,
-} from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,16 +41,19 @@ export default function Home() {
 
           <h1 className="text-5xl sm:text-7xl lg:text-9xl font-serif font-bold text-white tracking-tight leading-[0.9] max-w-6xl mx-auto">
             A People <br />
-            <span className="italic font-light text-primary">Helped by God</span>
+            <span className="italic font-light text-primary">
+              Helped by God
+            </span>
           </h1>
 
           <p className="text-lg md:text-2xl text-white/70 max-w-3xl mx-auto font-medium leading-relaxed">
-            Raising Chosen Treasures through the Word, Worship, and Warfare. Join our mandate to impact lives globally.
+            Raising Chosen Treasures through the Word, Worship, and Warfare.
+            Join our mandate to impact lives globally.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
             <Button
-              size="lg"   
+              size="lg"
               className="w-full sm:w-auto bg-church hover:opacity-90 text-white rounded-full px-12 h-20 text-xl shadow-2xl transition-all hover:scale-105 font-serif font-bold"
             >
               <Play className="mr-3 h-6 w-6 fill-current" />
@@ -85,20 +88,28 @@ export default function Home() {
             </div>
 
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed font-medium">
-            Treasured People Church Worldwide Inc. has been a beacon of spiritual transformation for over 17 years, committed to raising treasures and rescuing lives and families that walk in their divine inheritance.
+              Treasured People Church Worldwide Inc. has been a beacon of
+              spiritual transformation for over 17 years, committed to raising
+              treasures and rescuing lives and families that walk in their
+              divine inheritance.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-border/40 pt-12">
               <div className="space-y-4">
                 <h4 className="font-serif font-bold text-2xl">The Vision</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                To raise a generation of chosen treasures and to rescue families through the Word, Worship, and Warfare.
+                  To raise a generation of chosen treasures and to rescue
+                  families through the Word, Worship, and Warfare.
                 </p>
               </div>
               <div className="space-y-4">
-                <h4 className="font-serif font-bold text-2xl text-secondary">The Mission</h4>
+                <h4 className="font-serif font-bold text-2xl text-secondary">
+                  The Mission
+                </h4>
                 <p className="text-muted-foreground leading-relaxed">
-                To impact nations with the tangible power of God through righteousness and prayer and to rescue the families of the earth
+                  To impact nations with the tangible power of God through
+                  righteousness and prayer and to rescue the families of the
+                  earth
                 </p>
               </div>
             </div>
@@ -109,7 +120,8 @@ export default function Home() {
               className="group p-0 text-xl font-serif font-bold text-foreground hover:text-primary transition-all"
             >
               <Link href="/about" className="flex items-center gap-3">
-                Read Our Story <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                Read Our Story{" "}
+                <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
             </Button>
           </div>
@@ -125,7 +137,9 @@ export default function Home() {
             </div>
             <div className="absolute -bottom-16 -left-16 hidden xl:block w-64 aspect-square bg-card p-10 rounded-[2.5rem] shadow-2xl border border-border/40">
               <div className="flex flex-col items-center justify-center h-full text-center">
-                <span className="text-6xl font-serif font-bold text-primary">17</span>
+                <span className="text-6xl font-serif font-bold text-primary">
+                  17
+                </span>
                 <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-muted-foreground mt-2">
                   Years of Divine Grace
                 </span>
@@ -144,19 +158,23 @@ export default function Home() {
               </div>
               <h3 className="text-3xl font-serif font-bold">Sundays</h3>
               <div className="space-y-2">
-                <p className="text-primary font-bold uppercase tracking-widest text-xs">Divine Encounter</p>
-                <p className="text-xl font-medium">7:30 AM — 11:00 AM</p>
+                <p className="text-primary font-bold uppercase tracking-widest text-xs">
+                  Divine Encounter
+                </p>
+                <p className="text-xl font-medium">7:30 AM — 10:00 AM</p>
               </div>
             </div>
 
-            <div className="bg-church p-12 rounded-[3rem] space-y-8 text-white shadow-2xl relative overflow-hidden group">
+            <div className="bg-service-times p-12 rounded-[3rem] space-y-8 text-white shadow-2xl relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl" />
               <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Calendar size={28} />
               </div>
               <h3 className="text-3xl font-serif font-bold">Wednesdays</h3>
               <div className="space-y-2">
-                <p className="text-white/60 font-bold uppercase tracking-widest text-xs">Mid-Week Service</p>
+                <p className="text-white/60 font-bold uppercase tracking-widest text-xs">
+                  Mid-Week Service
+                </p>
                 <p className="text-xl font-medium">5:00 PM</p>
               </div>
             </div>
@@ -167,14 +185,15 @@ export default function Home() {
               </div>
               <h3 className="text-3xl font-serif font-bold">Daily Prayer</h3>
               <div className="space-y-2">
-                <p className="text-secondary font-bold uppercase tracking-widest text-xs">Intercession</p>
+                <p className="text-secondary font-bold uppercase tracking-widest text-xs">
+                  Intercession
+                </p>
                 <p className="text-xl font-medium">3:00 PM — 5:00 PM</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
 
       <section className="py-32 sm:py-48 px-4 sm:px-6 lg:px-8 bg-card relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-[120px] -z-10" />
@@ -184,9 +203,12 @@ export default function Home() {
             <div className="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary text-[10px] font-bold uppercase tracking-[0.2em]">
               The Leadership
             </div>
-            <h2 className="text-5xl sm:text-7xl font-serif font-bold">Guided by Spirit</h2>
+            <h2 className="text-5xl sm:text-7xl font-serif font-bold">
+              Guided by Spirit
+            </h2>
             <p className="text-xl text-muted-foreground font-medium">
-              Providing spiritual fatherhood and sound doctrine to every member of the Kingdom.
+              Providing spiritual fatherhood and sound doctrine to every member
+              of the Kingdom.
             </p>
           </header>
 
@@ -200,10 +222,14 @@ export default function Home() {
               {
                 name: "Prophetess Love Ibukun Olumodeji",
                 role: "Assistant President/Mother in Isreal",
-                image: "/Image3.jpeg"
+                image: "/Image3.jpeg",
               },
             ].map((leader, i) => (
-              <Link key={i} href="/leadership" className="group block space-y-8">
+              <Link
+                key={i}
+                href="/leadership"
+                className="group block space-y-8"
+              >
                 <div className="relative aspect-square rounded-[4rem] overflow-hidden shadow-2xl transition-all duration-700 group-hover:scale-[0.98]">
                   <Image
                     src={leader.image || "/placeholder.svg"}
@@ -212,14 +238,18 @@ export default function Home() {
                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-12">
-                    <span className="text-white font-serif italic text-xl">View Biography</span>
+                    <span className="text-white font-serif italic text-xl">
+                      View Biography
+                    </span>
                   </div>
                 </div>
                 <div className="text-center space-y-2">
                   <h3 className="text-3xl sm:text-4xl font-serif font-bold group-hover:text-primary transition-colors">
                     {leader.name}
                   </h3>
-                  <p className="text-xs uppercase tracking-[0.3em] font-bold text-muted-foreground">{leader.role}</p>
+                  <p className="text-xs uppercase tracking-[0.3em] font-bold text-muted-foreground">
+                    {leader.role}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -233,18 +263,38 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-6">
                 <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-xl ring-1 ring-border/20">
-                  <Image src="/nigerian-school-children-learning.jpg" alt="Student" fill className="object-cover" />
+                  <Image
+                    src="/nigerian-school-children-learning.jpg"
+                    alt="Student"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="relative aspect-square rounded-[2.5rem] overflow-hidden shadow-xl ring-1 ring-border/20">
-                  <Image src="/school-classroom-library.jpg" alt="Library" fill className="object-cover" />
+                  <Image
+                    src="/school-classroom-library.jpg"
+                    alt="Library"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
               <div className="space-y-6 pt-16">
                 <div className="relative aspect-square rounded-[2.5rem] overflow-hidden shadow-xl ring-1 ring-border/20">
-                  <Image src="/school-science-lab.jpg" alt="Lab" fill className="object-cover" />
+                  <Image
+                    src="/school-science-lab.jpg"
+                    alt="Lab"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-xl ring-1 ring-border/20">
-                  <Image src="/nigerian-school-student-studying.jpg" alt="Studying" fill className="object-cover" />
+                  <Image
+                    src="/nigerian-school-student-studying.jpg"
+                    alt="Studying"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -253,7 +303,7 @@ export default function Home() {
           <div className="space-y-12 order-1 lg:order-2">
             <div className="space-y-6">
               <div className="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent text-[10px] font-bold uppercase tracking-[0.2em]">
-              KINGDOM TREASURES CITADEL OF LEARNING SCHOOL
+                KINGDOM TREASURES CITADEL OF LEARNING SCHOOL
               </div>
               <h2 className="text-5xl sm:text-7xl font-serif font-bold leading-[1.1]">
                 Raising <br />
@@ -262,7 +312,8 @@ export default function Home() {
             </div>
 
             <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed font-medium">
-              A holistic Christ-centered education that blends academic rigor with uncompromising godly character.
+              A holistic Christ-centered education that blends academic rigor
+              with uncompromising godly character.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
@@ -324,7 +375,8 @@ export default function Home() {
                 <span className="italic text-accent">Mission</span>
               </h2>
               <p className="text-xl text-white/60 max-w-xl font-medium">
-                Your seeds enable us to impact lives globally and expand the Kingdom across nations.
+                Your seeds enable us to impact lives globally and expand the
+                Kingdom across nations.
               </p>
             </div>
 
@@ -338,8 +390,13 @@ export default function Home() {
                   key={i}
                   className="bg-white/5 backdrop-blur-md p-10 rounded-[2.5rem] flex flex-col items-center gap-6 border border-white/10 hover:bg-white/10 transition-all cursor-pointer group"
                 >
-                  <item.icon size={32} className="text-accent group-hover:scale-110 transition-transform" />
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/80">{item.label}</span>
+                  <item.icon
+                    size={32}
+                    className="text-accent group-hover:scale-110 transition-transform"
+                  />
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/80">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -362,7 +419,9 @@ export default function Home() {
                     <Phone size={24} />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs uppercase tracking-widest font-bold text-white/40">Call Us</span>
+                    <span className="text-xs uppercase tracking-widest font-bold text-white/40">
+                      Call Us
+                    </span>
                     <span className="text-xl font-bold">+234 8060749165</span>
                     <span className="text-xl font-bold">+2348038454195</span>
                   </div>
@@ -372,8 +431,12 @@ export default function Home() {
                     <Mail size={24} />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs uppercase tracking-widest font-bold text-white/40">Email</span>
-                    <span className="text-xl font-bold">info@treasuredpeople.org</span>
+                    <span className="text-xs uppercase tracking-widest font-bold text-white/40">
+                      Email
+                    </span>
+                    <span className="text-xl font-bold">
+                      info@treasuredpeople.org
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center gap-6 group">
@@ -381,8 +444,12 @@ export default function Home() {
                     <MapPin size={24} />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs uppercase tracking-widest font-bold text-white/40">Location</span>
-                    <span className="text-xl font-bold leading-tight">Kabba, Kogi State, Nigeria</span>
+                    <span className="text-xs uppercase tracking-widest font-bold text-white/40">
+                      Location
+                    </span>
+                    <span className="text-xl font-bold leading-tight">
+                      Kabba, Kogi State, Nigeria
+                    </span>
                   </div>
                 </div>
               </div>
@@ -394,13 +461,13 @@ export default function Home() {
               className="group p-0 text-xl font-serif font-bold text-white mt-16 self-start"
             >
               <Link href="/contact" className="flex items-center gap-3">
-                Send a Message <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                Send a Message{" "}
+                <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
             </Button>
           </div>
         </div>
       </section>
-      </div>
-
-        )
+    </div>
+  );
 }

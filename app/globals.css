@@ -80,6 +80,7 @@
   --font-mono: "Geist Mono", "Geist Mono Fallback";
 
   --background-image-church: linear-gradient(135deg, oklch(0.45 0.15 25) 0%, oklch(0.35 0.15 285) 100%);
+  --background-image-service-times: linear-gradient(135deg, oklch(0.42 0.14 255) 0%, oklch(0.55 0.16 25) 100%);
   --background-image-brand: linear-gradient(to bottom right, oklch(0.45 0.15 25), oklch(0.35 0.15 285));
   --background-image-hero-overlay: linear-gradient(to bottom, transparent 0%, oklch(0.12 0.02 280 / 0.8) 100%);
 
