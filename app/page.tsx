@@ -149,7 +149,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-32 sm:py-48 px-4 sm:px-6 lg:px-8">
+      <section className="py-32 sm:py-48 px-4 sm:px-6 lg:px-8 bg-muted/50">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
             <div className="bg-muted/50 p-12 rounded-[3rem] space-y-8 border border-border/40 hover:bg-card transition-colors group">
